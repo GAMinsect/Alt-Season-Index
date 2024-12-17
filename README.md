@@ -4,7 +4,7 @@ More precisely i wanted to recreate the index that can be found here: https://ww
 <p>
 Another benefit is that i can chose the period more freely (not just 90 days, a month or a year), and can chose how many crypto i want to have in my index (not capped at 50 anymore).
 <p>
-  
+
 # Navigating the files
 
 [Web_Scraping.ipynb](Web_Scraping.ipynb)
@@ -61,8 +61,12 @@ Here we have the list of Stable Coin and Asset Backed Token, so that they can be
 
 <p>
   
-[Alt_Season_With_50_Crypto](Alt_Season_With_50_Crypto)
+[Alt_Season_With_50_Cryptos](Alt_Season_With_50_Cryptos)
 This folder contains the 2 time series of the Alt season, one with BTC as a metric, the other with ETH as a metric. It also contains files that are used as a storage of past data, needed when calculating the Alt Season for new days
+
+[Price](Alt_Season_With_50_Cryptos/Price.csv), [Price_pct_change](Alt_Season_With_50_Cryptos/Price_pct_change.csv), [Volume](Alt_Season_With_50_Cryptos/Volume.csv) and [Price_pct_change_ordereed_ticket](Alt_Season_With_50_Cryptos/Price_pct_change_ordereed_ticket.csv) cant be easily previewed by Github because they have huge ammount of columns and rows, infact they use every row to represent a day or a crypto ticket, and likewhise every columns represent a crypto or a day.
+In total we are looking at more than 4000 days, for more than 200 cryptos (since i include not just the top 200 crypto right now, but the top 200 crypto hystorically, so that in case a crypto comes back from irrelevance there is still a reference to it in the dataframe)
+
 
 
 
